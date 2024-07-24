@@ -1,15 +1,16 @@
 {
-  "name": "vue3init",
-  "displayName": "vue3init",
+  "name": "vue3-init",
+  "displayName": "vue3-init",
   "description": "create vue 3 templates with script setup first",
-  "version": "0.0.1",
-  "publisher": "devPatrickSousa",
+  "version": "0.0.2",
+  "publisher": "vue3-init",
   "engines": {
     "vscode": "^1.91.0"
   },
   "categories": [
     "Other"
   ],
+  "icon": "./images/vue_logo-128x128.jpg",
   "activationEvents": [],
   "main": "./extension.js",
   "contributes": {
@@ -25,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/seu-usuario/seu-repositorio.git"
+    "url": "https://github.com/DevPatrickSousa/vue3init.git"
   },
   "devDependencies": {
     "@types/vscode": "^1.91.0",

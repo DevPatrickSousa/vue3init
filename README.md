@@ -1,4 +1,5 @@
-# Vue3 Init
+# Vue3init
+![Extension Icon](images/vue_logo-128x128.jpg)
 
 This extension helps you quickly set up a Vue 3 component with the script setup, template, and style sections.
 
@@ -6,11 +7,7 @@ This extension helps you quickly set up a Vue 3 component with the script setup,
 
 - Quickly initialize a Vue 3 component with the correct structure.
 
-## How to Use
-
-1. Open a `.vue` file.
-2. Type `vue3init`.
-3. Enjoy your new Vue 3 component!
+![Demo](images/demo.gif)
 
 ## Installation
 
@@ -18,6 +15,12 @@ This extension helps you quickly set up a Vue 3 component with the script setup,
 2. Go to Extensions.
 3. Search for "vue3init".
 4. Click Install.
+
+## How to Use
+
+1. Open a `.vue` file.
+2. Type `vue3init`.
+3. Enjoy your new Vue 3 component!
 
 ## Contributing
 
