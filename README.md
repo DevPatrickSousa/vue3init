@@ -1,5 +1,4 @@
 # Vue3init
-![Extension Icon](images/vue_logo-128x128.jpg)
 
 This extension helps you quickly set up a Vue 3 component with the script setup, template, and style sections.
 
