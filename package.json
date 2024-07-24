@@ -1,8 +1,8 @@
 {
   "name": "vue3-init",
   "displayName": "vue3-init",
-  "description": "create vue 3 templates with script setup first",
-  "version": "0.0.2",
+  "description": "create vue 3 templates with script setup on top.",
+  "version": "0.0.4",
   "publisher": "vue3-init",
   "engines": {
     "vscode": "^1.91.0"
