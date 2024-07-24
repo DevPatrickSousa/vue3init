@@ -23,6 +23,10 @@
     "pretest": "npm run lint",
     "test": "vscode-test"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seu-usuario/seu-repositorio.git"
+  },
   "devDependencies": {
     "@types/vscode": "^1.91.0",
     "@types/mocha": "^10.0.7",
