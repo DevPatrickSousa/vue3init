@@ -7,3 +7,23 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [Unreleased]
 
 - Initial release
+
+## [0.0.1] - 2024-07-24
+### Added
+- Added feature to automatically initialize Vue 3 template when 'vue3init' is typed in a `.vue` file.
+
+## [0.0.2] - 2024-07-24
+### Added
+- Added logo to the extension.
+
+## [0.0.3] - 2024-07-24
+### added 
+- Added .gif file to the read.me to easily understand how the extension works.
+
+## [0.0.4] - 2024-07-24
+### changed 
+- Changed the description of the extension.
+
+## [0.0.5] - 2024-07-24
+### fixed
+- Fixed not creating .vue templates/structures instantly.

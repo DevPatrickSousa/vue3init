@@ -1,8 +1,8 @@
 {
   "name": "vue3-init",
   "displayName": "vue3-init",
-  "description": "create vue 3 templates with script setup on top.",
-  "version": "0.0.4",
+  "description": "create vue 3 templates with just one word.",
+  "version": "0.0.5",
   "publisher": "vue3-init",
   "engines": {
     "vscode": "^1.91.0"
@@ -10,8 +10,10 @@
   "categories": [
     "Other"
   ],
+  "activationEvents": [
+    "onLanguage:vue"
+  ],
   "icon": "./images/vue_logo-128x128.jpg",
-  "activationEvents": [],
   "main": "./extension.js",
   "contributes": {
     "commands": [{
@@ -28,6 +30,7 @@
     "type": "git",
     "url": "https://github.com/DevPatrickSousa/vue3init.git"
   },
+  "changelog": "https://github.com/DevPatrickSousa/vue3init/blob/main/CHANGELOG.md",
   "devDependencies": {
     "@types/vscode": "^1.91.0",
     "@types/mocha": "^10.0.7",
