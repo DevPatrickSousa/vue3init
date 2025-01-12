@@ -34,3 +34,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ### Changed
 - Changed extension logo and readme.
 
+## [0.0.7] - 2025-01-12
+### Changed
+- Changed extension logo.
+
