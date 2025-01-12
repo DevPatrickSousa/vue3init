@@ -1,6 +1,6 @@
 # Vue3init
 
-This extension helps you quickly set up a Vue 3 component with the script setup, template, and style sections.
+This extension helps you quickly set up a Vue 3 SFC (Single File Component) with the script setup, template, and style sections.
 
 ## Features
 
@@ -19,13 +19,13 @@ This extension helps you quickly set up a Vue 3 component with the script setup,
 
 1. Open a `.vue` file.
 2. Type `vue3init`.
-3. Enjoy your new Vue 3 component!
+3. Enjoy your new Vue 3 SFC!
 
 ### Using with TypeScript
 
    1. Open a `.vue` file.
    2. Type `vue3initts` or `vue3init-ts`.
-   3. Enjoy your new Vue 3 (TS) component!
+   3. Enjoy your new Vue 3 (TS) SFC!
 
 ## Contributing
 
