@@ -13,7 +13,6 @@
   "activationEvents": [
     "onLanguage:vue"
   ],
-  "icon": "./images/vue_logo-128x128.jpg",
   "main": "./extension.js",
   "contributes": {
     "commands": [{
