@@ -2,7 +2,7 @@
   "name": "vue3-init",
   "displayName": "vue3-init",
   "description": "create vue 3 templates with just one word.",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "publisher": "vue3-init",
   "engines": {
     "vscode": "^1.91.0"
