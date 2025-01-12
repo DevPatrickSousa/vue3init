@@ -1,68 +1,52 @@
 const vscode = require('vscode');
+const { jsTemplate } = require('./templates/jsTemplate');
+const { tsTemplate } = require('./templates/tsTemplate');
 
 /**
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
-    vscode.window.showInformationMessage('Vue3 Init extension is now active!');
+  vscode.window.showInformationMessage('Vue3 Init extension is now active!');
+  let timeout;
 
-    // Listener
-    const watchText = vscode.workspace.onDidChangeTextDocument(event => {
-        const editor = vscode.window.activeTextEditor;
+  // Listener
+  const watchText = vscode.workspace.onDidChangeTextDocument(event => {
+    const editor = vscode.window.activeTextEditor;
 
-        if (editor && editor.document.languageId === 'vue') {
-            const document = editor.document;
-            const text = document.getText();
+    if (editor && editor.document.languageId === 'vue') {
+      const document = editor.document;
+      const text = document.getText();
+      let template = '';
 
-            if (text.includes('vue3init')) {
-                const template = `<script setup>
+      if (text.includes('vue3init')) {
+        template = jsTemplate();
+      }
 
-</script>
+      if (text.includes('vue3initts') || text.includes('vue3init-ts')) {
+        template = tsTemplate();
+      }
 
-<template>
-
-</template>
-
-<style scoped>
-
-</style>`;
-
-                editor.edit(editBuilder => {
-                    editBuilder.delete(new vscode.Range(new vscode.Position(0, 0), new vscode.Position(document.lineCount, 0)));
-                    editBuilder.insert(new vscode.Position(0, 0), template);
-                });
-            }
-
-            if (text.includes('vue3initts') || text.includes('vue3init-ts')) {
-              const template = `<script setup lang="ts">
-
-</script>
-
-<template>
-
-</template>
-
-<style scoped>
-
-</style>`;
-
-              editor.edit(editBuilder => {
-                  editBuilder.delete(new vscode.Range(new vscode.Position(0, 0), new vscode.Position(document.lineCount, 0)));
-                  editBuilder.insert(new vscode.Position(0, 0), template);
-              });
-          }
+      clearTimeout(timeout);
+      timeout = setTimeout(() => {
+        if (template) {
+          editor.edit(editBuilder => {
+            editBuilder.delete(new vscode.Range(new vscode.Position(0, 0), new vscode.Position(document.lineCount, 0)));
+            editBuilder.insert(new vscode.Position(0, 0), template);
+          });
         }
-    });
+      }, 500);
+    }
+  });
 
-    // Register listener
-    context.subscriptions.push(watchText);
+  // Register listener
+  context.subscriptions.push(watchText);
 }
 
 function deactivate() {
-    console.log('Vue3 Init extension is now deactivated.');
+  console.log('Vue3 Init extension is now deactivated.');
 }
 
 module.exports = {
-    activate,
-    deactivate
+  activate,
+  deactivate
 };

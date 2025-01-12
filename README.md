@@ -4,7 +4,7 @@ This extension helps you quickly set up a Vue 3 component with the script setup,
 
 ## Features
 
-- Quickly initialize a Vue 3 component with the correct structure.
+- Quickly initialize a Vue 3 SFC.
 
 ![Demo](images/demo.gif)
 
@@ -20,6 +20,12 @@ This extension helps you quickly set up a Vue 3 component with the script setup,
 1. Open a `.vue` file.
 2. Type `vue3init`.
 3. Enjoy your new Vue 3 component!
+
+### Using with TypeScript
+
+   1. Open a `.vue` file.
+   2. Type `vue3initts` or `vue3init-ts`.
+   3. Enjoy your new Vue 3 (TS) component!
 
 ## Contributing
 

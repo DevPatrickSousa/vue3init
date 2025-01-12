@@ -27,3 +27,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [0.0.5] - 2024-07-24
 ### fixed
 - Fixed not creating .vue templates/structures instantly.
+
+## [0.0.6] - 2025-01-12
+### Added
+- Added support for TypeScript with `vue3initts` or `vue3init-ts`.
+### Changed
+- Changed extension logo and readme.
+
