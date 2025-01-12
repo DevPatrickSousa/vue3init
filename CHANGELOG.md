@@ -38,3 +38,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ### Changed
 - Changed extension logo.
 
+## [0.0.8] - 2025-01-12
+### Changed
+- Changed extension description.
+

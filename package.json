@@ -1,8 +1,8 @@
 {
   "name": "vue3-init",
   "displayName": "vue3-init",
-  "description": "create vue 3 templates with just one word.",
-  "version": "0.0.7",
+  "description": "Create Vue 3 Single File Components (SFCs) with just one word.",
+  "version": "0.0.8",
   "publisher": "vue3-init",
   "author": {
     "name": "Patrick"
