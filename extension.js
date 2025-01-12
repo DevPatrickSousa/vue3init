@@ -6,15 +6,14 @@ const vscode = require('vscode');
 function activate(context) {
     vscode.window.showInformationMessage('Vue3 Init extension is now active!');
 
-    // Event listener for text document changes
-    const textChangeDisposable = vscode.workspace.onDidChangeTextDocument(event => {
+    // Listener
+    const watchText = vscode.workspace.onDidChangeTextDocument(event => {
         const editor = vscode.window.activeTextEditor;
 
         if (editor && editor.document.languageId === 'vue') {
             const document = editor.document;
             const text = document.getText();
 
-            // Check if 'vue3init' was typed
             if (text.includes('vue3init')) {
                 const template = `<script setup>
 
@@ -33,14 +32,32 @@ function activate(context) {
                     editBuilder.insert(new vscode.Position(0, 0), template);
                 });
             }
+
+            if (text.includes('vue3initts') || text.includes('vue3init-ts')) {
+              const template = `<script setup lang="ts">
+
+</script>
+
+<template>
+
+</template>
+
+<style scoped>
+
+</style>`;
+
+              editor.edit(editBuilder => {
+                  editBuilder.delete(new vscode.Range(new vscode.Position(0, 0), new vscode.Position(document.lineCount, 0)));
+                  editBuilder.insert(new vscode.Position(0, 0), template);
+              });
+          }
         }
     });
 
-    // Register the text change listener
-    context.subscriptions.push(textChangeDisposable);
+    // Register listener
+    context.subscriptions.push(watchText);
 }
 
-// This method is called when your extension is deactivated
 function deactivate() {
     console.log('Vue3 Init extension is now deactivated.');
 }
