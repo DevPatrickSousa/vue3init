@@ -27,6 +27,10 @@ This extension helps you quickly set up a Vue 3 SFC (Single File Component) with
    2. Type `vue3initts` or `vue3init-ts`.
    3. Enjoy your new Vue 3 (TS) SFC!
 
+## Why does the script setup block go at the top?
+
+![Evan You explanation](images/explanation.png)
+
 ## Contributing
 
 Feel free to submit issues or pull requests.
