@@ -42,3 +42,6 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ### Changed
 - Changed extension description.
 
+## [0.0.9] - 2025-01-12
+### Added
+- Explanation about why the script block is at the top.
